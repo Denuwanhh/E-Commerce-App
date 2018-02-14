@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Help</title>
+
+<style type="text/css">
+body {
+	background-color: #FAFAFA;
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="Home.css">
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$(".accordion h3:first").addClass("active");
+	$(".accordion p:not(:first)").hide();
+
+	$(".accordion h3").click(function(){
+		$(this).next("p").slideToggle("slow")
+		.siblings("p:visible").slideUp("slow");
+		$(this).toggleClass("active");
+		$(this).siblings("h3").removeClass("active");
+	});
+
+});
+</script>
+
+<script type="text/javascript">
+function validateSearch()
+{
+	if(validateSearchField())
+	{
+		window.location.href = "Search.html";
+		window.event.returnValue=true;	
+	}
+	else
+		window.event.returnValue=false;
+}
+function validateSearchField()
+{
+	var search = document.getElementById("SearchFiledID").value;
+	if((search==null)||(search=="")||(search==" ")){
+		alert("Enter text to search")
+		return false;
+	}
+	else
+		return true;
+}
+</script>
+
+</head>
+
+<body>
+<table class="TopBarClass" width="100%" bgcolor="#FFFFFF" border="0" align="center">
+  <tr>
+    <td height="25" width="0%"></td>
+    <td height="25" width="720"></td>
+    <td height="25" width="70"><font face="Segoe UI" size="2"><center><i>My eStore</i></center></font></td>
+    <td height="25" width="160"><font face="Segoe UI" size="2"><center><i>Hi! <a href="Login.html">Sign in</a> or <a href="Register.html">Register</a></i>
+    </center></font></td>
+    <td height="25" width="20"><center>
+      <a href="Cart.html"><img src="Images/Cart.png" width="20" height="20" /></a>
+    </center></td>
+    <td height="25" width="%"></td>
+  </tr>
+</table>
+<table id="Search" width="1000" border="0" align="center">
+  <tr>
+    <td width="191" rowspan="3"><a href="Home.html"><img src="Images/Logo.png" width="180" height="70" /></a></td>
+    <td width="573">&nbsp;</td>
+    <td width="126">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="34" bgcolor="#FFFFFF"><input name="Search" placeholder="Search..." type="text" class="resizedTextbox2" id="SearchFiledID"/></td>
+    <td width="126"><input type="image" src="Images/Search.png" onclick="validateSearch()" /></td>
+    <td width="92"><font color="#6E6E6E" face="Segoe UI"><center>
+      <font color="#6E6E6E" face="Segoe UI"><font color="#6E6E6E" face="Segoe UI"><i><a href="Advanced_Search.html">Advanced</a></i></font></font>
+    </center></font></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table class="MenuBar"  height="40" width="1000" border="0" align="center">
+  <tr>
+    <td><font color="#6E6E6E" face="Segoe UI"><a href="Home.html">Home</a> | <a href="About Us.html">About Us</a> | <a href="Contact Us.html">Contact Us</a> | <a href="Help.html">Help</a></font></td>
+  </tr>
+</table>
+<table width="1000" border="0" align="center">
+  <tr>
+    <td height="10px"><font color="#848484"  size="2" face="Segoe UI"><i>You are in Here : Help</i></font></td>
+  </tr>
+</table>
+<table width="1000" border="0" align="center">
+  <tr>
+    <td></td>
+  </tr>
+</table>
+<table width="100%" bgcolor="#FAFAFA" border="0" align="center">
+  <tr>
+    <td width="%"></td>
+    <td width="1000px"><div class="accordion">
+      <h3>Why is our price unbeatable?</h3>
+      <p>
+    Focus on limited product lineups.<br>
+    Partnership with many factories and sourcing from them directly.<br>
+    Powerful system to prejudge and control the storage exactly.<br>
+    Contact all suppliers for the latest supply status multiple times each day.<br>
+    Each of warehouses is literally next to our shipping carriers.</p>
+      <h3>How does RFabrics select and present merchandise?</h3>
+      <p>Merchandise is selected based on product uniqueness, quality, demonstrability, timeliness, and appeal. RFabrics is one of only a handful of retailers with its own in-house Quality Assurance program and extensive warehouse quality control. A full-time staff of stage designers, technicians, and stylists makes sure each product is presented in the most appropriate way. Finally, our Program Hosts, many of whom travel the world to research products, explain and demonstrate every item in an entertaining, informative, and friendly presentation.</p>
+      <h3>What are the quality assurance and a product's country of origin?</h3>
+      <p>Regardless of where an item originates, our quality inspectors travel to all of suppliers' to help ensure that all of the products meet RFabrics' highest quality standards. RFabrics' professional Quality Control team hand tests most of the products unit-by-unit carefully to ensure your satisfaction. New products are selected with reliability considerations and your expectations in mind, and also following a strict protocol and inspection requirement.</p>
+      <h3>Ready to Sign Up?</h3>
+      <p>To start, you must have registered on site and have a account. If you don't have one yet, click <a href="Register.php">here</a> to START.</p>
+      <h3>Order Status Terms</h3>
+      <p>The 'Profile' tab link found under the 'My eStore' page provides the most recent information regarding your order.<br />To view your Order Status, please click <a href="Login.php">here</a> to login to your RFabrics.com account.</p>
+      <h3>Can I Change My Order?</h3>
+      <p>Unfortunately, we are unable to make any changes to an existing order. There is a short period of time in which an order may be cancelled. If your order can be cancelled, we encourage you to replace the order at your earliest convenience. </p>
+      <h3>How do I cancel my order?</h3>
+      <p>Due to our commitment to process orders quickly, there is a short period of time in which you may cancel your order. You may choose to cancel your entire order or a portion of your order as long as the order has not yet been 'Dispatched' for fulfillment. <br />If you order has not been shipped, you may cancel it for a full refund. </p>
+      <h3>Which payment methods can I choose?</h3>
+      <p>When you have added the item you to shopping cart, you would process checkout. Click the cart button, and you can see there are two kinds of payment methods. </p>
+</div></td>
+    <td width="%"></td>
+  </tr>
+</table>
+<table width="1000" align="center">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table bgcolor="#F2F2F2" width="100%" border="0" align="center">
+  <tr>
+    <td width="%" height="32px"></td>
+    <td width="32" height="32px"><img src="Images/FB.jpg" width="32" height="32" /></td>
+    <td width="32" height="32px"><img src="Images/YT.jpg" width="32" height="32" /></td>
+    <td width="32" height="32px"><img src="Images/Tw.jpg" width="32" height="32" /></td>
+    <td width="32" height="32px"><img src="Images/G+.jpg" width="32" height="32" /></td>
+    <td width="852" height="32px"></td>
+    <td width="%" height="32px"></td>
+  </tr>
+</table>
+<table bgcolor="#F2F2F2" height="20px" width="100%" border="0" align="center">
+  <tr>
+    <td height="20px" width="%"></td>
+    <td height="20px" width="499"><p><font face="Segoe UI">Copyright © 2015 RFabrics.com; All Rights Reserved. User Agreement, Privacy and Cookies</font></p></td>
+    <td height="20px" width="499">&nbsp;</td>
+    <td height="20px" width="%"></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,400 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+margin: 0 0 0 0;
+}
+.TopBarClass{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+table.TopBarClass tr{
+	/*display: block;*/
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url(Fonts/segoeui.ttf);
+}
+
+table.MenuBar td{
+	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+}
+table.log td{
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+			
+}
+
+.TabbedPanelsContent{
+   	background-color: #FFF;
+	border-color:#FFF;
+}
+
+.resizedTextbox{
+	width: 325px;
+	height:20px;
+	border-color:#F2F2F2;
+	background-color:#F2F2F2;
+	border-style:hidden;
+}
+
+.resizedTextbox11{
+	width: 250px;
+	height:30px;
+	border-color:#F2F2F2;
+	background-color:#F2F2F2;
+	border-style:hidden;
+}
+
+.resizedTextbox2{
+    width: 565px;
+	height:25px;
+	border-style:groove;
+	border-color:#CCC;
+	padding-left:10px;
+	font-style:italic;
+	font-family: "Segoe UI";
+    src: url(Fonts/segoeui.ttf);
+}
+
+.resizedTextbox3{
+	width: 325px;
+	height:40px;
+	border-color:#F2F2F2;
+	background-color:#F2F2F2;
+	border-style:hidden;
+}
+
+.resizedTextbox4{
+	width: 310px;
+	height: 30px;
+	border-color: #F2F2F2;
+	background-color: #F2F2F2;
+	border-style: hidden;
+}
+
+.resizedTextbox10{
+	width: 325px;
+	height: 30px;
+	border-color: #F2F2F2;
+	background-color: #F2F2F2;
+	border-style: hidden;
+}
+
+.resizedTextbox5{
+	width: 525px;
+	height:30px;
+	border-color:#F2F2F2;
+	background-color:#F2F2F2;
+	border-style:hidden;
+}
+
+.resizedTextbox6{
+	width: 370px;
+	height:30px;
+	border-color:#F2F2F2;
+	background-color:#F2F2F2;
+	border-style:hidden;
+	font-style:italic;
+}
+
+.resizedTextbox7{
+	width: 525px;
+	height:40px;
+	border-color:#F2F2F2;
+	background-color:#F2F2F2;
+	border-style:hidden;
+}
+
+.resizedTextbox8{
+	width: 400px;
+	height:40px;
+	border-color:#F2F2F2;
+	background-color:#F2F2F2;
+	border-style:hidden;
+	font-family: "Segoe UI";
+    src: url(Fonts/segoeui.ttf);
+	border-radius:25;
+	padding-left:20px;
+}
+.resizedTextbox9{
+	width: 400px;
+	height:60px;
+	border-color:#F2F2F2;
+	background-color:#F2F2F2;
+	border-style:hidden;
+	font-family: "Segoe UI";
+    src: url(Fonts/segoeui.ttf);
+	border-radius:25;
+	padding-top:10px;
+	font-size:6;
+	padding-left:20px;
+}
+a:link {
+    text-decoration: none;
+	color: #6E6E6E;
+}
+
+a:visited {
+    color: #6E6E6E;
+}
+
+a:hover {
+    color: #000000;
+}
+
+a:active {
+    color: #6E6E6E;
+}
+
+*{
+	box-sizing: border-box;
+	border-bottom-color: #000;
+}
+
+.container{
+  font-family: "Segoe UI";
+  src: url(Fonts/segoeui.ttf);
+}
+
+.box{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cover{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+  padding:  1em;
+  color: #fff;
+  overflow: hidden;
+  font-family: "Segoe UI";
+  src: url(Fonts/segoeui.ttf);
+}
+.cover .title{
+  font-size: 12pt;
+}
+.box .cover .intro{
+  line-height: 100%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-size: 10pt;
+  overflow: hidden;
+}
+
+.cover .btn{
+  padding: 0.3em 1em;
+  /*margin: 0.5em;*/
+  background: #0099cc;
+  float: right;
+  border-radius: 0.25em;
+}
+.btn a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.box:hover .left{
+  -webkit-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+   left: 0px;
+}
+.box:hover .right{
+  -webkit-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+   right: 0px;
+}
+.box:hover .top{
+  -webkit-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+   top: 0px;
+}
+.box:hover .bottom{
+  -webkit-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+    bottom: 0px;
+}
+.box:hover .top-left{
+  -webkit-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+    top: 0px;
+    left: 0px;
+}
+.box:hover .top-right{
+  -webkit-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+    top: 0px;
+    right: 0px;
+}
+.box:hover .bottom-left{
+  -webkit-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+    bottom: 0px;
+    left: 0px;
+}
+.box:hover .bottom-right{
+  -webkit-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+    bottom: 0px;
+    right: 0px;
+}
+.left{
+  left: -100%;
+}
+.right{
+  right: -100%;
+}
+.top{
+  top: -100%;
+}
+.bottom{
+  bottom: -100%;
+}
+.top-left{
+  top: -100%;
+  left: -100%;
+}
+.top-right{
+  top: -100%;
+  right: -100%;
+}
+.bottom-left{
+  bottom: -100%;
+  left: -100%;
+}
+.bottom-right{
+  bottom: -100%;
+  right: -100%;
+}
+/* Ordering */
+  .left{order:1;}
+  .right{order:2;}
+  .top{order:3;}
+  .bottom{order:4;}
+  .top-left{order:5;}
+  .top-right{order:6;}
+  .bottom-left{order:7;}
+  .bottom-right{order:8;}
+  
+.accordion {
+	width: 1000px;
+	border-bottom: solid 1px #c4c4c4;
+}
+.accordion h3 {
+	background: #e9e7e7 url(Images/arrow-square.gif) no-repeat right -51px;
+	padding: 7px 15px;
+	margin: 0;
+	font-family: "Segoe UI";
+    src: url(Fonts/segoeui.ttf);
+	border: solid 1px #c4c4c4;
+	border-bottom: none;
+	cursor: pointer;
+}
+.accordion h3:hover {
+	background-color: #e3e2e2;
+}
+.accordion h3.active {
+	background-position: right 5px;
+}
+.accordion p {
+	background: #f7f7f7;
+	margin: 0;
+	padding: 10px 15px 20px;
+	border-left: solid 1px #c4c4c4;
+	border-right: solid 1px #c4c4c4;
+}
+p{
+	font-family: "Segoe UI";
+    src: url(Fonts/segoeui.ttf);
+}
+select {
+   width:300px;
+}
+.tblea{
+	border-radius:10px;
+	margin-top:10%;
+	margin-bottom:20%;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+}
+
+.custom-dropdown__select{
+    font-size: 12; 
+	font-family: "Segoe UI";
+    src: url(Fonts/segoeui.ttf);
+    padding: .5em; 
+    margin: 0; 
+}
+
+.custom-dropdown__select--white {
+    background-color: #fff;
+    color: #444;  
+	font-family: "Segoe UI";
+    src: url(Fonts/segoeui.ttf);  
+}
+
+.custom-dropdown__select--white2 {
+    background-color:#F8F8F8 ;
+	width:325px;
+    color: #444; 
+	font-family: "Segoe UI";
+    src: url(Fonts/segoeui.ttf);  
+}
+
+@supports (pointer-events: none) and
+      ((-webkit-appearance: none) or
+      (-moz-appearance: none) or
+      (appearance: none)) {
+
+.custom-dropdown {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.custom-dropdown__select {
+	padding-right: 2.5em; 
+	border: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;    
+}
+
+.custom-dropdown::before,
+
+.custom-dropdown::after {
+	content: "";
+	position: absolute;
+	pointer-events: none;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+	content: "\25BC";
+	height: 1em;
+	font-size: .625em;
+	line-height: 1;
+	right: 1.2em;
+	top: 50%; margin-top: -.5em;
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+	width: 2em;
+	right: 0; top: 0; bottom: 0;
+	border-radius: 0 3px 3px 0;
+}
+
+ .custom-dropdown__select[disabled] {
+    color: rgba(0,0,0,.3);
+}
+
+.custom-dropdown.custom-dropdown--disabled::after {
+    color: rgba(0,0,0,.1);
+}
+.but{
+	font-family: "Segoe UI";
+    src: url(Fonts/segoeui.ttf);
+}
